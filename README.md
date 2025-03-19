@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Safe for Gnosis
 
-## Getting Started
+A powerful decoder for Safe (formerly Gnosis Safe) multi-signature wallet transactions. This tool helps users inspect and verify transaction details before signing.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Multi-chain Support**: Compatible with 20+ networks including Ethereum, Arbitrum, Optimism, and more
+- **Advanced Transaction Decoding**: 
+  - Decodes complex transactions including MultiSend operations
+  - Shows detailed function calls and parameters
+  - Displays transaction values and data
+- **Signature Tracking**:
+  - Real-time confirmation status
+  - Detailed signer information with timestamps
+  - Quick access to signer addresses on Etherscan
+- **User-Friendly Interface**:
+  - Clean and intuitive UI
+  - Transaction grouping and organization
+  - Expandable data fields for detailed inspection
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Select your network from the dropdown
+2. Enter your Safe wallet address
+3. Enter the transaction ID (nonce)
+   - Leave empty to fetch all transaction history
+4. Click "Check" to view transaction details
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Transaction Details
 
-## Learn More
+The tool provides comprehensive information for each transaction:
+- Transaction type and operation
+- Confirmation status with signer details
+- Target address and value
+- Decoded function calls and parameters
+- Raw transaction data (expandable)
 
-To learn more about Next.js, take a look at the following resources:
+## Special Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **On-chain Rejection Detection**: Automatically identifies and marks rejected transactions
+- **MultiSend Decoding**: Breaks down complex batch transactions into individual operations
+- **Signature Verification**: Shows current confirmation status and required signatures
+- **Raw Data Access**: View and copy raw transaction data when needed
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Development
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with:
+- Next.js
+- Tailwind CSS
+- shadcn/ui
