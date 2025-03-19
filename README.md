@@ -2,6 +2,8 @@
 
 A powerful decoder for Safe (formerly Gnosis Safe) multi-signature wallet transactions. This tool helps users inspect and verify transaction details before signing.
 
+<img src="https://raw.githubusercontent.com/sari3l/safe-for-gnosis/main/preview.png"/><br/>
+
 ## Features
 
 - **Multi-chain Support**: Compatible with 20+ networks including Ethereum, Arbitrum, Optimism, and more
